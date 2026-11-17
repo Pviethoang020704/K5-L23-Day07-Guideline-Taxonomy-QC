@@ -1,0 +1,4 @@
+{
+  "kind": "editorial",
+  "summary": "Làm rõ câu chữ cách vẽ box ôm sát phần nhìn thấy (R-01), tách riêng người và phương tiện (R-02, R-05), không kéo rộng box theo hàng hóa quá khổ (R-07) và gom vùng đám đông/vật nhỏ < 20 px vào ignore_region (R-09) sau phiên họp Calibration Pha 5; giữ nguyên ngữ nghĩa 9 lớp và ngưỡng thuộc tính của v1.0."
+}
