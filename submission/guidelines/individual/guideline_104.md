@@ -1,4 +1,6 @@
-# Guideline gán nhãn — <phiên bản> — <mã hoặc nhóm>
+# Guideline gán nhãn cá nhân — bản lưu hiện có — mã 104
+
+> Bản tổng hợp hồ sơ cho thấy file này chứa một bản guideline cá nhân v0.1, nhưng tác giả/nội dung chưa được thành viên 104 xác nhận trong báo cáo. 104 cần rà lại đây có phải bản đã viết độc lập ở Pha 1 hay không trước khi nộp; không xem phần bổ sung báo cáo là xác nhận thay thành viên.
 
 > Copy file này (hoặc `guideline_v0_starter.md`) rồi viết. Một guideline đủ gồm **5 phần**. Câu nào của v0
 > làm hai người đọc ra hai cách khác nhau thì phải viết lại cho một cách hiểu duy nhất.
