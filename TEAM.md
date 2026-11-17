@@ -4,7 +4,7 @@
 - Mã thành viên (ba chữ số): `101`, `102`, `103`, `104`
 - Người điều phối: 104
 - Người review bản cuối: 104
-- Commit chốt bài (điền ở kênh nộp sau khi commit): Chưa có
+- Commit chốt bài (điền ở kênh nộp sau khi commit): 6ba9cf8632bf589eb19cdc295cc5d4c0660c5272
 
 ## Kết quả đã có
 
@@ -17,7 +17,7 @@
 - Công cụ hỗ trợ review: `submission/qc/calibration_proposals.csv` nối 230 ca với dữ liệu COCO/IAA; proposal COCO, bảng ưu tiên và nhật ký thay đổi ở `work/calibration_review/` chỉ dùng nội bộ, chưa được duyệt và không phải nhãn cuối.
 - Vòng QC và số ảnh đã duyệt / cả lô: Chưa mở vòng QC; 0/40 ảnh có bằng chứng duyệt QC.
 - Tỉ lệ lỗi: N/A theo ảnh (chưa duyệt, không phải 0/40); N/A theo đối tượng (chưa duyệt).
-- **Quyết định** (Release / Hold / Rework): **Hold** — calibration chưa chốt, chưa có nhãn cuối/manifest và chưa có QC thủ công.
+- **Quyết định** (Release / Hold / Rework):
 
 ## Theo dõi phần còn lại
 
