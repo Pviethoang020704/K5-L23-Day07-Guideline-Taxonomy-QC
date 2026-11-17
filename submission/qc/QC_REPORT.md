@@ -17,6 +17,7 @@
 ## 3. Calibration và kiểm lại
 
 - Ca đã xử lý, rule ID, bản sửa và người xác nhận: 0/230 ca được nhóm chốt. `calibration_candidates.csv` có 230 ca trên 32 ảnh; `calibration_decisions.csv` ghi từng ca đang chờ review thủ công, chưa có người chốt.
+- Hỗ trợ triage: `calibration_proposals.csv` có 230/230 ca, nối bbox candidate với annotation COCO nguồn (kèm ID, thuộc tính, IoU đối chiếu và quy tắc cần xem); 230 crop theo mã ca được tạo dưới `work/calibration_review/cases/`. Đây là gợi ý AI/chứng cứ định vị, chưa phải review ảnh đầy đủ hay quyết định nhóm; ảnh/nhãn nguồn không bị sửa.
 - Tác động v1.1 lên nhãn và ảnh: Chưa áp dụng. Bản v1.1 chỉ là dự thảo quy trình, không đổi taxonomy hay quy tắc gán nhãn; chưa xác nhận sửa ảnh/annotation nào trên CVAT.
 - Tham chiếu bằng chứng khi Rework: Chưa có vòng Rework hoặc export sửa. Cần giữ COCO, quyết định và ảnh đối chiếu của vòng trước khi mở vòng mới.
 
