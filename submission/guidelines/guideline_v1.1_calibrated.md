@@ -1,6 +1,6 @@
 # Guideline gán nhãn — v1.1 — Bản hiệu chỉnh sau Calibration (101, 102, 103, 104)
 
-> **Bản đặc tả gán nhãn chính thức v1.1 (Calibrated)** của nhóm `101`, `102`, `103`, `104` sau khi đo IAA ở Pha 4 và họp Calibration giải quyết toàn bộ các ca bất đồng ở Pha 5. Phiên bản `v1.1` giữ nguyên 9 lớp và 3 thuộc tính của `taxonomy.json` (`v1.0`), đồng thời làm rõ câu chữ (`kind: "editorial"`) đối với các quy tắc dễ gây lệch IoU, bỏ sót/thừa hoặc bất đồng vùng `ignore_region`.
+> **Bản đặc tả gán nhãn chính thức v1.1 (Calibrated)** của nhóm `101`, `102`, `103`, `104` sau khi đo IAA ở Pha 4 và họp Calibration giải quyết toàn bộ 230 ca bất đồng trên 32 ảnh ở Pha 5. Phiên bản `v1.1` giữ nguyên 9 lớp và 3 thuộc tính của `taxonomy.json` (`v1.0`), đồng thời làm rõ câu chữ (`kind: "editorial"`) đối với các quy tắc dễ gây lệch IoU, bỏ sót/thừa hoặc bất đồng vùng `ignore_region`.
 
 - **Phiên bản:** `v1.1`
 - **Ngày hiệu chỉnh:** 2026-11-17
@@ -30,7 +30,7 @@ Giữ nguyên **9 lớp chuẩn** trong `submission/taxonomy.json` (`version: "v
 |---|---|---|---|
 | `car` | Ô tô con chở người từ 4 đến 9 chỗ ngồi (sedan, hatchback, SUV, crossover, wagon, taxi). | Ô tô con trên phố; taxi trắng `img_031`, taxi vàng/hồng `img_040`; wagon AMC Pacer `img_024`; xe cơ sở diễu hành `img_019`. | Xe bán tải pickup (`truck`); xe van thùng kín (`van`); xe mô hình đồ chơi trên kệ `img_037`, `img_038` (**không gán**). |
 | `truck` | Xe tải chở hàng, xe đầu kéo, xe chuyên chở và **xe bán tải (pickup truck)** có khoang cabin tách rời thùng/sàn chở phía sau. | Xe chuyên chở ô tô `img_002`; xe bán tải đỗ trước quán `img_001`, `img_012`, `img_028`; xe tải nhẹ CMC Veryca `img_036`; bán tải nắp thùng cao Master 75 `img_037`. | Tượng đá hình xe bán tải ở nghĩa trang `img_027` (**không gán**); xe van thùng kín liền khối (`van`); SUV 7 chỗ (`car`). |
-| `van` | Xe thùng kín liền một khối từ cabin đến đuôi xe, chuyên chở hàng hóa hoặc chở khách 9-16 chỗ (minivan, panel van, xe cứu thương). | Minivan màu bạc chạy ngang đường `img_005`; xe van cứu thương/chuyên dụng `img_011`. | Xe bán tải có nắp thùng cao `img_036`, `img_037` (vẫn là `truck` vì cabin tách rời thùng); xe buýt cỡ lớn (`bus`). |
+| `van` | Xe thùng kín liền một khối từ cabin đến đuôi xe, chuyên chở hàng hóa hoặc chở khách 9-16 chỗ (minivan, panel van, xe cứu thương). | Minivan màu bạc chạy ngang đường `img_005`; xe van cứu thương/chuyên dụng `img_011`. | Xe bán tải có nắp thùng cao `img_016`, `img_036`, `img_037` (vẫn là `truck` vì cabin tách rời thùng); xe buýt cỡ lớn (`bus`). |
 | `bus` | Xe buýt công cộng, xe khách cỡ lớn hoặc minibus chở nhiều hành khách. | Xe buýt lớn phía sau đoàn xích lô `img_009`; xe buýt tại ngã tư `img_031`; xe buýt tại trạm dừng `img_032`; xe buýt trên đại lộ `img_040`. | Minivan 7-9 chỗ liền khối (`van`); xe tải thùng kín (`truck`). |
 | `tuk_tuk` | Xe cơ giới ba bánh chở khách hoặc chở hàng có buồng lái hở và động cơ (tuk-tuk, auto-rickshaw, xe lam). | 2 xe tuk-tuk màu xanh đỗ vỉa hè `img_004`; xe tuk-tuk trên phố Bangkok `img_016`, `img_040`; xe auto-rickshaw chở bao tải `img_035`. | Xe mô tô 2 bánh (`motorcycle`); xe xích lô đạp chân (`bicycle`). |
 | `motorcycle` | Xe gắn máy, xe mô tô 2 bánh hoặc 3 bánh có gắn động cơ (bao gồm xe số, xe tay ga, mô tô phân khối lớn, xe máy độ và mô tô có thùng phụ sidecar). | Dòng xe máy trên đường `img_005`, `img_008`, `img_014`, `img_021`, `img_026`, `img_030`; mô tô cổ gắn thùng phụ sidecar `img_022`. | Xe đạp (`bicycle`); xe xích lô đạp chân (`bicycle`); xe tuk-tuk 3 bánh (`tuk_tuk`). |
@@ -49,7 +49,7 @@ Mọi đối tượng thuộc 8 lớp phương tiện và người bắt buộc 
    - **`1` - Che khuất nhẹ:** Từ **10% đến 30%** diện tích vật thể bị che bởi vật khác.
    - **`2` - Che khuất trung bình đến nặng:** Từ **31% đến 70%** diện tích vật thể bị che khuất.
    - **`3` - Che khuất cực nặng:** Trên **70%** diện tích bị che khuất nhưng mắt người vẫn nhận dạng chắc chắn được lớp nhờ đặc trưng nhận diện then chốt.
-   - *Làm rõ ở v1.1:* Khi hai người gán lệch nhau giữa mức `0` và `1` hoặc giữa `1` và `2` trên các đối tượng bị che nhẹ ở tiền cảnh, ưu tiên đối chiếu tỷ lệ diện tích bị che thực tế trên ảnh gốc khi chốt bản đồng thuận.
+   - *Làm rõ ở v1.1:* Khi hai người gán lệch nhau giữa mức `0` và `1` hoặc giữa `1` và `2` trên các đối tượng bị che nhẹ ở tiền cảnh, đối chiếu tỷ lệ diện tích bị che thực tế trên ảnh gốc khi chốt bản đồng thuận.
 
 2. **`truncated` (Cắt mép ảnh):**
    - **`no`:** Toàn bộ phần nhìn thấy của vật thể nằm gọn bên trong khung ảnh (cách mép ảnh > 1.5 px).
@@ -180,4 +180,4 @@ Mọi đối tượng thuộc 8 lớp phương tiện và người bắt buộc 
 |---|---|---|---|---|
 | `v0` | 2026-11-16 | Giảng viên | Bản sơ lược khởi đầu: chỉ có 5 lớp định tính, chưa có quy tắc ca biên. | Chưa giải quyết được xe chở xe, tuk-tuk, xe buýt, xe đạp/xích lô, tượng, phản chiếu. |
 | `v1.0` | 2026-11-16 | Nhóm `101`, `102`, `103`, `104` | Mở rộng lên 9 lớp (`bus`, `tuk_tuk`, `bicycle`), định lượng ngưỡng thuộc tính và ban hành 11 quy tắc `R-01` → `R-11`. | Thống nhất sau phiên họp Pha 2 từ 4 bản guideline cá nhân. |
-| `v1.1` | 2026-11-17 | `103` (cùng `101`, `102`, `104`) | Hiệu chỉnh câu chữ (`editorial`) làm rõ ranh giới vùng `ignore_region` (`R-09`), quy tắc không kéo box theo hàng quá khổ (`R-07`), tách riêng box `bicycle` và `person` trên xích lô (`R-05`), và chuẩn hóa thuộc tính `truncated=yes` ở mép ảnh. | Giải quyết các ca bất đồng (`bo_sot_thua`, `iou_thap`, `bat_dong_ignore`, `sai_thuoc_tinh`) phát hiện qua IAA ở Pha 4. |
+| `v1.1` | 2026-11-17 | `103` (cùng `101`, `102`, `104`) | Hiệu chỉnh câu chữ (`editorial`) làm rõ ranh giới vùng `ignore_region` (`R-09`), quy tắc không kéo box theo hàng quá khổ (`R-07`), tách riêng box `bicycle` và `person` trên xích lô (`R-05`), và chuẩn hóa thuộc tính `truncated=yes` ở mép ảnh. | Giải quyết 230 ca bất đồng (`bo_sot_thua`, `iou_thap`, `bat_dong_ignore`, `sai_thuoc_tinh`, `sai_lop`, `co_can_review`) phát hiện qua IAA ở Pha 4. |
